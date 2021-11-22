@@ -17,6 +17,7 @@
 		21534AF227493D5200C0EFA0 /* SandboxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21534AF127493D5200C0EFA0 /* SandboxUITests.swift */; };
 		21534AF427493D5200C0EFA0 /* SandboxUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21534AF327493D5200C0EFA0 /* SandboxUITestsLaunchTests.swift */; };
 		21534B052749516C00C0EFA0 /* TestStoryboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21534B042749516C00C0EFA0 /* TestStoryboardViewController.swift */; };
+		21534B09274BA6C600C0EFA0 /* ObjCTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21534B08274BA6C600C0EFA0 /* ObjCTestViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,8 @@
 		21534AF327493D5200C0EFA0 /* SandboxUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SandboxUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		21534B042749516C00C0EFA0 /* TestStoryboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestStoryboardViewController.swift; sourceTree = "<group>"; };
 		21534B06274BA6C600C0EFA0 /* Sandbox-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sandbox-Bridging-Header.h"; sourceTree = "<group>"; };
+		21534B07274BA6C600C0EFA0 /* ObjCTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjCTestViewController.h; sourceTree = "<group>"; };
+		21534B08274BA6C600C0EFA0 /* ObjCTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjCTestViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +139,8 @@
 			children = (
 				21534AD427493D5000C0EFA0 /* MenuTableViewController.swift */,
 				21534B042749516C00C0EFA0 /* TestStoryboardViewController.swift */,
+				21534B07274BA6C600C0EFA0 /* ObjCTestViewController.h */,
+				21534B08274BA6C600C0EFA0 /* ObjCTestViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -280,6 +285,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21534B09274BA6C600C0EFA0 /* ObjCTestViewController.m in Sources */,
 				21534AD527493D5000C0EFA0 /* MenuTableViewController.swift in Sources */,
 				21534AD127493D5000C0EFA0 /* AppDelegate.swift in Sources */,
 				21534B052749516C00C0EFA0 /* TestStoryboardViewController.swift in Sources */,
