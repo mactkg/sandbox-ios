@@ -50,8 +50,8 @@ class DataSource: NSObject, UITableViewDataSource {
             Item(desc: "Test") {
                 return TestStoryboardViewController.create()
             },
-            Item(desc: "Test") {
-                return TestStoryboardViewController.create()
+            Item(desc: "Objective-C") {
+                return ObjCTestViewController.create()
             },
             Item(desc: "Test") {
                 return TestStoryboardViewController.create()
