@@ -55,6 +55,7 @@
 		21534B06274BA6C600C0EFA0 /* Sandbox-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sandbox-Bridging-Header.h"; sourceTree = "<group>"; };
 		21534B07274BA6C600C0EFA0 /* ObjCTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjCTestViewController.h; sourceTree = "<group>"; };
 		21534B08274BA6C600C0EFA0 /* ObjCTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjCTestViewController.m; sourceTree = "<group>"; };
+		21534B0D274DC7B100C0EFA0 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +86,7 @@
 		21534AC427493D5000C0EFA0 = {
 			isa = PBXGroup;
 			children = (
+				21534B0D274DC7B100C0EFA0 /* README.md */,
 				21534ACF27493D5000C0EFA0 /* Sandbox */,
 				21534AE627493D5200C0EFA0 /* SandboxTests */,
 				21534AF027493D5200C0EFA0 /* SandboxUITests */,
