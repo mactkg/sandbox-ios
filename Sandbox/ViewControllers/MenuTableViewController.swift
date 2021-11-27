@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Util
 
 class MenuTableViewController: UITableViewController {
     let dataSource = DataSource()
@@ -15,6 +16,8 @@ class MenuTableViewController: UITableViewController {
         
         tableView.dataSource = dataSource
         tableView.delegate = self
+        
+        Greeter().greeting()
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
