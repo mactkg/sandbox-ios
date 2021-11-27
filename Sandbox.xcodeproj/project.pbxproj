@@ -18,6 +18,7 @@
 		21534AF427493D5200C0EFA0 /* SandboxUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21534AF327493D5200C0EFA0 /* SandboxUITestsLaunchTests.swift */; };
 		21534B052749516C00C0EFA0 /* TestStoryboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21534B042749516C00C0EFA0 /* TestStoryboardViewController.swift */; };
 		21534B09274BA6C600C0EFA0 /* ObjCTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21534B08274BA6C600C0EFA0 /* ObjCTestViewController.m */; };
+		21534B47275223BC00C0EFA0 /* Util in Frameworks */ = {isa = PBXBuildFile; productRef = 21534B46275223BC00C0EFA0 /* Util */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		21534B07274BA6C600C0EFA0 /* ObjCTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjCTestViewController.h; sourceTree = "<group>"; };
 		21534B08274BA6C600C0EFA0 /* ObjCTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjCTestViewController.m; sourceTree = "<group>"; };
 		21534B0D274DC7B100C0EFA0 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		21534B42275222F200C0EFA0 /* Util */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Util; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21534B47275223BC00C0EFA0 /* Util in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,11 +89,13 @@
 		21534AC427493D5000C0EFA0 = {
 			isa = PBXGroup;
 			children = (
+				21534B42275222F200C0EFA0 /* Util */,
 				21534B0D274DC7B100C0EFA0 /* README.md */,
 				21534ACF27493D5000C0EFA0 /* Sandbox */,
 				21534AE627493D5200C0EFA0 /* SandboxTests */,
 				21534AF027493D5200C0EFA0 /* SandboxUITests */,
 				21534ACE27493D5000C0EFA0 /* Products */,
+				21534B45275223BC00C0EFA0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -155,6 +160,13 @@
 			path = Misc;
 			sourceTree = "<group>";
 		};
+		21534B45275223BC00C0EFA0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -169,8 +181,12 @@
 			buildRules = (
 			);
 			dependencies = (
+				21534B44275223AA00C0EFA0 /* PBXTargetDependency */,
 			);
 			name = Sandbox;
+			packageProductDependencies = (
+				21534B46275223BC00C0EFA0 /* Util */,
+			);
 			productName = Sandbox;
 			productReference = 21534ACD27493D5000C0EFA0 /* Sandbox.app */;
 			productType = "com.apple.product-type.application";
@@ -324,6 +340,10 @@
 			isa = PBXTargetDependency;
 			target = 21534ACC27493D5000C0EFA0 /* Sandbox */;
 			targetProxy = 21534AEE27493D5200C0EFA0 /* PBXContainerItemProxy */;
+		};
+		21534B44275223AA00C0EFA0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 21534B43275223AA00C0EFA0 /* Util */;
 		};
 /* End PBXTargetDependency section */
 
@@ -662,6 +682,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		21534B43275223AA00C0EFA0 /* Util */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Util;
+		};
+		21534B46275223BC00C0EFA0 /* Util */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Util;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 21534AC527493D5000C0EFA0 /* Project object */;
 }
