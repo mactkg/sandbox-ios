@@ -6,6 +6,7 @@
 //
 
 #import "ObjCTestViewController.h"
+@import Util;
 
 @interface ObjCTestViewController ()
 
@@ -21,6 +22,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    Greeter *greeter = [Greeter new];
+    [greeter greeting];
+    [greeter getRandomGreetingTextObjCWithSuccess:^(NSString * _Nonnull text) {
+        NSLog(@"Sucess! %@", text);
+    } error:^(RandomError * _Nonnull error) {
+        NSLog(@"Got Error... %@", error);
+    }];
 }
 
 /*
